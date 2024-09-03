@@ -1,6 +1,6 @@
 import express from 'express';
 import ViteExpress from 'vite-express';
-import jsonArticles from "./articles.json" assert { type: "json" };
+import jsonArticles from "./articles.json" with { type: "json" };
 
 const app = express();
 ViteExpress.config({ printViteDevServerHost: true });
